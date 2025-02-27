@@ -1,7 +1,7 @@
 CREATE TABLE Author (
-    AuthorID SERIAL PRIMARY KEY,
-    FirstName VARCHAR(255) NOT NULL,
-    LastName VARCHAR(255) NOT NULL
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Category (
@@ -10,7 +10,7 @@ CREATE TABLE Category (
 );
 
 CREATE TABLE Book (
-    BookID SERIAL PRIMARY KEY,
+    uuid SERIAL PRIMARY KEY,
     Title VARCHAR(255) NOT NULL,
     AuthorID INT NOT NULL,
     CategoryID INT NOT NULL,
